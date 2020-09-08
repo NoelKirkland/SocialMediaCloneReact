@@ -1,16 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import Timeline from '.timeline/Timeline'
+import Timeline from './timeline/Timeline';
+import Navbar from './navbar/Navbar';
+import FriendsList from './friendsList/FriendsList';
 import './App.css';
 
 function App() {
   return (
     <React.Fragment>
       <Navbar />
+      <div className="row">
+        <div className="col-md-6">
       <Timeline />
+        </div>
+        <div className="col-md-6">
       <FriendsList />
-      <ProfileHeader />
-      <ProfileBody />
+        </div>
+      </div>
+      {/* <ProfileHeader />
+      <ProfileBody /> */}
     </React.Fragment>
   );
 }
